@@ -1,14 +1,14 @@
 .index_banner_block {
 }
 
-/* ------------關於東昇------------ */
+/* ------------關於------------ */
 .about_block {
   max-width: 1200px;
 }
 .about_content {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   gap: 30px;
 }
 
@@ -331,5 +331,8 @@
 
   .info_block {
     padding: 20px 0;
+  }
+  .info_text a{
+    font-size: 14px;
   }
 }

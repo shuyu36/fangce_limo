@@ -131,7 +131,8 @@ section {
   text-decoration: none;
   margin: 10px;
   transition: background 0.5s ease;
-  width: 112px;
+  width: 130px;
+  text-align: center;
 }
 
 .contact_link a:hover {
@@ -187,7 +188,7 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
   section {
     padding: 40px 70px;
-}
+  }
   .footer_logo {
     text-align: center;
   }
@@ -205,6 +206,9 @@ footer a:hover {
   p {
     font-size: 14px;
   }
+  .contact_text {
+    width: 100%;
+  }
 
   .text_title_1st {
     font-size: 20px;
@@ -219,5 +223,8 @@ footer a:hover {
   .footer_block {
     flex-direction: column;
     align-items: flex-start;
+  }
+  footer a {
+    font-size: 14px;
   }
 }
