@@ -1,0 +1,335 @@
+.index_banner_block {
+}
+
+/* ------------關於東昇------------ */
+.about_block {
+  max-width: 1200px;
+}
+.about_content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+.about_content img {
+  max-width: 356px;
+  height: auto;
+}
+
+.about_text_green {
+  font-size: 23px;
+  font-weight: bold;
+  color: #163919;
+}
+
+.about_text_18px {
+  color: #163919;
+  font-size: 18px;
+}
+.about_con2 {
+  justify-content: space-around;
+  /* align-items: flex-start; */
+}
+
+.about_con2_text {
+  max-width: 400px;
+}
+
+/* ------------工程介紹------------ */
+
+.service_block {
+  padding: 50px 100px;
+  /* padding-bottom: 0; */
+  margin-bottom: 0;
+}
+
+.service_text_tittle {
+  border-color: #dadada;
+}
+
+.service_title1 {
+  color: #ffffff;
+}
+.service_title2 {
+  color: #dadada;
+}
+
+.servixe_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.service_li {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: #fff;
+  justify-content: center;
+  width: 860px;
+  margin: 0 auto;
+}
+
+.service_li img {
+  width: 30%;
+}
+
+.service_text_all {
+  max-height: 300px;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.li_left {
+  border-left: 2px solid #ebdd97;
+  padding-left: 14px;
+}
+
+.li_right {
+  border-right: 2px solid #ebdd97;
+  padding-right: 14px;
+}
+
+.service_text_title {
+  color: #ebdd97;
+  font-size: 20px;
+}
+
+.service_text {
+  /* display: flex;
+  gap: 40px;
+  align-items: center; */
+}
+
+.service_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.about_button {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 200px;
+  border: none;
+  background-color: #ffffff;
+  color: #537867;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.6s ease-out;
+}
+
+.about_button:hover {
+  background-color: #ebdd97;
+  color: #537867;
+
+  animation: shake 0.5s ease; /* 添加 shake 动画效果 */
+
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/* --------------跑馬燈-------------- */
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  /* animation: marquee 50s linear infinite; */
+  font-size: 18px;
+  color: #fff;
+}
+.marquee-content {
+  display: flex;
+  animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* --------------相關資訊-------------- */
+
+.index_text {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.title_CN {
+  color: #503520;
+}
+
+.title_EN {
+  color: #994545;
+}
+
+.title_line {
+  border: #994545 1px solid;
+  width: 70px;
+}
+
+.info_block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.iframe_map {
+  width: 40%;
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact_title {
+  font-size: 20px;
+  color: #163919;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info_block a {
+  color: #2c2c2c;
+}
+
+.info_title {
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .about_content img {
+    max-width: 266px;
+    height: auto;
+  }
+  .service_li {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .iframe_map {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_content {
+    flex-direction: column;
+  }
+  .service_li {
+    flex-direction: column;
+    width: auto;
+  }
+  .service_second {
+    flex-direction: column-reverse;
+  }
+
+  .li_left,
+  .li_right {
+    border-top: 2px solid #ebdd97;
+    padding-top: 14px;
+    border-left: none;
+    border-right: none;
+    height: auto;
+    padding: 0;
+  }
+
+  .servixe_title {
+    flex-direction: column;
+  }
+
+  .info_block {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .service_li img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .index_banner_block {
+    content: url(../image/index_banner_mobile.webp);
+    width: 100%;
+    height: auto;
+  }
+  .service_block {
+    padding: 30px 20px;
+  }
+  .about_text_green {
+    font-size: 16px;
+  }
+  .about_text_18px {
+    font-size: 15px;
+  }
+
+  .service_li {
+    width: auto;
+    gap: 20px;
+  }
+
+  .service_text_title {
+    font-size: 16px;
+  }
+
+  .info_block {
+    padding: 20px 0;
+  }
+}

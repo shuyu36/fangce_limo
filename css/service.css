@@ -1,0 +1,87 @@
+.banner_block {
+  background-image: url(../image/page_banner_1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* banner */
+.index_text {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.title_CN {
+  color: #fff;
+}
+
+.title_EN {
+  color: #ec2227;
+}
+
+.title_line {
+  border: #ec2227 1px solid;
+  width: 70px;
+}
+
+.banner_height {
+  height: 540px;
+}
+
+.title_CN {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title_EN {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* 服務 */
+
+.service_title {
+  color: #163919;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.service_cont_block {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.service_img p {
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+    .banner_height {
+        height: 230px;
+    }
+    .service_img p {
+        margin-top: 10px;
+    }
+    .service_cont_block {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .service_cont_block {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .title_CN {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      
+    .title_EN {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
